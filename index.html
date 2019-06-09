@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head lang="en">
+  <meta charset="utf-8" />
+  <title>Blank Template</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
+
+  <script type="text/javascript" src="js/app.js"></script>
+  <script type="text/javascript" src="js/getUsersService.js"></script>
+  <script type="text/javascript" src="/js/controllers/aboutController.js"></script>
+  <script type="text/javascript" src="js/controllers/homeController.js"></script>
+</head>
+
+<body >
+  <div class="container" ng-controller="mainController">
+    <div> 
+      <div id="navigation">  
+      <a href="#/home">Home</a>
+      <a href="#/about">About</a>
+      </div>
+    <h1>Hello <b>{{currUser}}</b></h1>
+    <div ng-view></div>
+</div>
+  </div>
+</body>
+
+</html>
